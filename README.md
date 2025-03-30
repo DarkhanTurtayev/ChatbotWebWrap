@@ -4,5 +4,5 @@ Small pipeline to connect Dialogflow NLP Model with own WebPage (University proj
 
 Arhictecture UML:
 
-![Screenshot] (https://github.com/DarkhanTurtayev/ChatbotWebWrap/blob/main/static/images/UML.png)
+![Screenshot](https://github.com/DarkhanTurtayev/ChatbotWebWrap/blob/main/static/images/UML.png)
 
