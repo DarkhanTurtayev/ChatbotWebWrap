@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogflow Hotel Booking</title>
+    <style>
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        df-messenger {
+            --df-messenger-bot-message: #d1e0ff;
+            --df-messenger-button-titlebar-color: #4c4c4c;
+            --df-messenger-font-color: #333;
+
+            position: absolute;
+            top: 39%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+            width: 400px; 
+            height: 600px; 
+            max-height: 80%;
+        }
+
+        
+
+
+        .df-chat-container {
+            display: none !important; /* Remove any forced auto-open */
+        }
+
+
+        .arrow-container {
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .arrow-img {
+            width: 100px; 
+            height: auto;
+            rotate: 45deg;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img src="static/images/hotelchatbot.png" alt="Logo">
+
+        <h1>Welcome to Hotel Booking Chatbot</h1>
+        <p>Click here</p>
+
+
+
+        <div class="arrow-container">
+            <img src="static/images/arrow.png" alt="Curved Arrow" class="arrow-img">
+
+        <!-- Dialogflow Messenger Script -->
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            chat-title="Hotel_Booking_IU"
+            agent-id="1234a0bc-ca7f-4d13-8fd3-fe6560066761"
+            language-code="en"
+        ></df-messenger>
+    </div>
+</body>
+</html>
